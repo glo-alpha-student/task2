@@ -1,5 +1,5 @@
 let title = "Task2";
-let screens = "Простые, Сложные, Интерактивные".toLowerCase();
+let screens = "Простые, Сложные, Интерактивные";
 let screenPrice = Math.random() * 100000000;
 let rollback = Math.random() * 99;
 let fullPrice = 100000000;
@@ -15,7 +15,7 @@ console.log('Стоимость верстки экранов - ', screenPrice, 
 
 console.log('Стоимость разработки сайта - ', fullPrice, 'долларов');
 
-console.log(screens.split(","));
+console.log(screens.toLowerCase().split(","));
 
 console.log('Процент отката посреднику за работу - ', fullPrice * (rollback / 100), '%');
 
